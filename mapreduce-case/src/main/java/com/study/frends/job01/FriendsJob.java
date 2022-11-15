@@ -18,9 +18,14 @@ public class FriendsJob {
         // 1、 加载配置
         Configuration configuration = new Configuration(true);
         // 2、 设置运行模式
-        configuration.set("mapreduce.framework.name", "local");
+        //  configuration.set("mapreduce.framework.name", "local");
+        // TODO:设置跨平台
+        configuration.set("mapreduce.app-submission.cross-platform", "true");
         // 3、 创建作业对象
         Job job = Job.getInstance(configuration);
+        // TODO:设置jar
+        job.setJar("D:\\JavaProject\\hadoop\\mapreduce-case\\target\\mapreduce-case-1.0-SNAPSHOT.jar");
+        job.setJarByClass(FriendsJob.class);
         // 4、 设置作业的主类
         job.setJarByClass(FriendsJob.class);
         // 5、 设置作业的名称
