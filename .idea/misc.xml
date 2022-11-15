@@ -7,6 +7,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/hdfs-api/pom.xml" />
+        <option value="$PROJECT_DIR$/mapreduce-case/pom.xml" />
       </list>
     </option>
   </component>

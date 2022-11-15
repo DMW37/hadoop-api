@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hdfs-api" />
+        <module name="mapreduce-case" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hdfs-api" target="8" />
+      <module name="mapreduce-case" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
